@@ -40,4 +40,40 @@ class GildedRoseSpringApplicationTests {
         assertEquals("Backstage passes to a TAFKAL80ETC concert", items[7].name);
         assertEquals("Conjured Mana Cake", items[8].name);
     }
+
+    @Test
+    public void updateQualityTest() {
+
+        app.distribute(items);
+        assertEquals(9, items[0].sellIn);
+            assertEquals(19, items[0].quality);
+
+
+        assertEquals(1, items[1].sellIn);
+        assertEquals(1, items[1].quality);
+
+        assertEquals(4, items[2].sellIn);
+        assertEquals(6, items[2].quality);
+
+        assertEquals(0, items[3].sellIn);
+        assertEquals(80, items[3].quality);
+
+        assertEquals(-1, items[4].sellIn);
+        assertEquals(80, items[4].quality);
+
+
+        assertEquals(14, items[5].sellIn);
+        assertEquals(21, items[5].quality);
+
+        assertEquals(9, items[6].sellIn);
+        assertEquals(50, items[6].quality);
+
+        assertEquals(4, items[7].sellIn);
+        assertEquals(50, items[7].quality);
+
+        assertEquals(2, items[8].sellIn);
+        assertEquals(5, items[8].quality);
+
+    }
+
 }

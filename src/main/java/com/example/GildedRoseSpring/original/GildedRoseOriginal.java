@@ -1,11 +1,11 @@
-package com.example.GildedRoseSpring.example;
+package com.example.GildedRoseSpring.original;
 
 import com.example.GildedRoseSpring.model.Item;
 
-public class GildedRoseExample {
+public class GildedRoseOriginal {
     Item[] items;
 
-    public GildedRoseExample(Item[] items) {
+    public GildedRoseOriginal(Item[] items) {
         this.items = items;
     }
 
